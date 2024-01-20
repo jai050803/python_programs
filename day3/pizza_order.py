@@ -6,7 +6,6 @@ print("\n........type the number to chose your pizza ........\n")
 
 order = int(input("enter the number of pizza you want to choose :"))
 size = input("what size S(small) M(medium or L(large)) ?\nType here :")
-prize = 0
 
 if order == 1:
     if size == "S":
@@ -71,7 +70,7 @@ confirm = input()
 
 if confirm == "Y" or confirm == "y":
     address = input("Type the delivery address :")
-    print(f" your order will be delievered to you in 30 minutes on your address {address} ")
+    print(f" your order will be delievered to you in 30 minutes on your address {address} and your bill is {price}")
 
 else:
     print("Thanks for reaching out to us.... hope to see you soon again")
