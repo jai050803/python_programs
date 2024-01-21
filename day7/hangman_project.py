@@ -6,3 +6,8 @@ chosen_word = random.choice(word)
 #task2 - take input from the user
 guess = input().lower()
 
+if guess in chosen_word:
+    print(True)
+else:
+    print(False)
+
