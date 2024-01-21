@@ -3,11 +3,19 @@ import random
 word = ["hello", "balloon" , "adventure", "bookkeeper", "andaman", "narendra", "delhi"]
 
 chosen_word = random.choice(word)
-#task2 - take input from the user
-guess = input().lower()
+display = []
+for i in range(len(chosen_word)):
+    display.append("_")
+for i in display:
+    print(i, end=" ")
 
-if guess in chosen_word:
-    print(True)
-else:
-    print(False)
+#task2 - take input from the user
+guess = input("\n\n\nGuess a letter :").lower()
+
+
+for i in chosen_word:
+    if guess == i:
+        print("correct")
+    else:
+        print("Wrong")
 
