@@ -3,15 +3,14 @@ print("\n....the program will calculate the average height of n number of studen
 print("enter the height of each person in cm separated by space ...")
 
 name = input().split()
+for n in name:
+    name[name.index(n)] = int(n)
 sum = 0
-
-for i in range(0,len(name)):
-    sum += int(name[i])
-    
-average =sum/len(name)
-
-
-
+total = 0
+for i in name:
+    sum += i
+    total += 1
+average = round(sum/total)
 print(f"average height is {average}cm")
     
     
