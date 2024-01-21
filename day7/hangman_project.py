@@ -3,5 +3,6 @@ import random
 word = ["hello", "balloon" , "adventure", "bookkeeper", "andaman", "narendra", "delhi"]
 
 chosen_word = random.choice(word)
-
+#task2 - take input from the user
+guess = input().lower()
 
