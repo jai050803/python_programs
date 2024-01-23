@@ -33,8 +33,6 @@ while not end_of_game:
     if lives == 0:
       print("You lose.")
       end_of_game = True
-        
-            
   print(f"{' '.join(display)}")
     
   if "_" not in display:
