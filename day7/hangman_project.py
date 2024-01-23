@@ -71,10 +71,7 @@ for i in chosen_word:
         for i in range(len(chosen_word)):
             if chosen_word[i] == guess:
                 display[i] = guess
+
         
-            else:
-                for i in range(len(stages)-1,0,-1):
-                    print(stages[i])
-
-
+end_of_game = False
         
