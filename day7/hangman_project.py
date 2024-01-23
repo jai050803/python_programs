@@ -1,70 +1,17 @@
 #task1 - pick a random word from the list of words
 import random
+import word_list
+import hangman
 
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
+l = hangman.logo
+print(l)
 
+stages = hangman.stages
 lives = 6
-
-word = ["hello", "balloon" , "adventure", "bookkeeper", "andaman", "narendra", "delhi"]
+word = word_list.word_list
 end_of_game = False
 chosen_word = random.choice(word)
 word_length = len(chosen_word)
-print(f'Pssst, the solution is {chosen_word}.')
 display = []
 
 for _ in range(word_length):
@@ -72,22 +19,28 @@ for _ in range(word_length):
 
 while not end_of_game:
   guess = input("Guess a letter: ").lower()
+  
+  if guess in display:
+    print(f"you have already guessed the {guess}")
   for position in range(word_length):
     letter = chosen_word[position]
     if letter == guess:
       display[position] = letter
     
   if guess not in chosen_word:
-      lives -= 1
-      if lives == 0:
-        end_of_game = True
-        print("You lose.")
+    print(f"you have guessed the letter {guess} wrong so you lose a life")
+    lives -= 1
+    if lives == 0:
+      print("You lose.")
+      end_of_game = True
+        
             
   print(f"{' '.join(display)}")
     
   if "_" not in display:
-    end_of_game = True
     print("You win.")
+    end_of_game = True
+    
         
   print(stages[lives])
       
