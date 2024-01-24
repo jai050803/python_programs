@@ -15,4 +15,9 @@ greet_with_name("jai") #take one input for our function
 def greet_with(name,area):
     print(f"hello {name} from {area}")
 
-greet_with("jai","delhi")
+greet_with("jai","delhi") #positional arguement
+
+
+#keyword arguement
+
+greet_with(name="Jai", area = "New Delhi")
