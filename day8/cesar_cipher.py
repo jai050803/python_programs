@@ -10,11 +10,11 @@ shift = int(input("Type the shift number:\n"))
 
 def encrypt(text,shift):
     for char in text:
-        pos = text.index(char) #initial position of character
-        new_pos = pos + shift
-        if new_pos > len(alphabet):
-            new_pos = new_pos - len(alphabet)
-        new_char = alphabet[new_pos]
-        text = text.replace(char,new_char)
-    print(text)
+        print(char)
+        a =text.index(char)
+        print(a)
+        for char in alphabet:
+            print(char)
+                
+encrypt(text,shift)
     
