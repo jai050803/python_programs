@@ -32,11 +32,7 @@ def decrypt(text,shift):
             continue
         position = alphabet.index(char)
         new_index = position - shift
-        # if new_index in range(0, len(alphabet)):
         cipher_text += alphabet[new_index]
-        # elif new_index >= len(alphabet):
-        #     index_n = new_index + len(alphabet)
-            # cipher_text += alphabet[index_n]
     print(cipher_text)
     
 if direction == "encode":
