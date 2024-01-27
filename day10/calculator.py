@@ -12,7 +12,17 @@ dictionary = {
     "*":multiply,
     "/":divide
 }
-print(dictionary)
+
+n1 = int(input("enter the first number : "))
+for j in dictionary.keys():
+    print(j)
+operations = input("Pick the operation from above example : ")
+if operations in dictionary.keys():
+    n2 = int(input("enter the second number : "))
+    operation_function = dictionary[operations]
+    print(f"{n1} {operations} {n2} = {operation_function(n1,n2)}")
+else:
+    print("invalid operator")
 
 # resume = True
 # while resume == True:
