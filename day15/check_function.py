@@ -1,10 +1,12 @@
 from resources import *
+from order import *
 def check(ask):
     if ask == "espresso":
         if espresso["water"] <= resource["water"]:
             if espresso["milk"] <= resource["milk"]:
                 if espresso["coffee"] <= resource["coffee"]:
                     print(f"insert {espresso["money"]} rupees to get espresso")
+                    order_espresso()
                 else:
                     print(f"not enough coffee available coffee :{resource['coffee']} and required is {espresso['coffee']}")
             else:
