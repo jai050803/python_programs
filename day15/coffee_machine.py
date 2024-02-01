@@ -9,7 +9,6 @@ while On == True:
         print(f"Milk : {resource['milk']} ml")
         print(f"Coffee : {resource['coffee']} g")
         print(f"Money : ${resource['money']}")
-        
     check(ask)
     if ask == "off":
         On = False
