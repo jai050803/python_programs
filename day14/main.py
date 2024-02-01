@@ -12,7 +12,7 @@ while True:
     name2 = random.choice(data)
     if name1 == name2:
         name2 = random.choice(data)
-    print(f"\nThe competition is between {name1['name']} vs {name2['name']}")
+    print(f"\nThe competition is between \n{name1['name']}, a {name1['description']} from {name1['country']} \nvs\n{name2['name']} a {name2['description']} from {name2['country']}")
 
     answer = input("\nWho has more followers? Type 'a' or 'b' :").lower()
 
@@ -21,17 +21,17 @@ while True:
 
     if answer == "a":
         if follower2 > follower1:
-            print(f"\nYou are wrong. your final score is {score}")
+            print(f"\nYou are wrong. score: {score}")
             break
         else:
             score += 1
-            print(f"\nYou are right. Your score is {score}")
+            print(f"\nYou are right.")
     elif answer == "b":
         if follower2 > follower1:
             score += 1
-            print(f"\nYou are right. Your score is {score}")
+            print(f"\nYou are right.")
            
         else:
-            print(f"\nYou are wrong. Your final score is {score}")
+            print(f"\nYou are wrong. score: {score}")
             break
     
