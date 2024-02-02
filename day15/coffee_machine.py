@@ -1,5 +1,6 @@
 from resources import *
 from order import *
+from reduce import *
 def check(ask):
     if ask == "espresso":
         if espresso["water"] <= resource["water"]:
@@ -48,5 +49,6 @@ while On == True:
         print(f"Coffee : {resource['coffee']} g")
         print(f"Money : ${resource['money']}")
     check(ask)
+    reduce()
     if ask == "off":
         On = False
