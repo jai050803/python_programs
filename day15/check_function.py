@@ -37,3 +37,4 @@ def check(ask):
                 print(f"not enough milk available milk :{resource['milk']} and required is {cappuccino['milk']}")
         else:
             print(f"not enough water available water :{resource['water']} and required is {cappuccino['water']}")
+            
