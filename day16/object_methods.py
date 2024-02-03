@@ -1,3 +1,8 @@
+# Objects can also contain methods. Methods in objects are functions that belong to the object.
+
+# Let us create a method in the Person class:
+
+
 class Person:
   def __init__(self, name, age):
     self.name = name
