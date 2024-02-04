@@ -6,7 +6,7 @@ class Person:
   def __init__(mysillyobject, name, age):
     mysillyobject.name = name
     mysillyobject.age = age
-
+#creating an object inside person class
   def myfunc(abc):
     print("Hello my name is " + abc.name)
 
