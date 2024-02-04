@@ -1,0 +1,1 @@
+# Write a program that defines a class representing a simple bank account. The class should have methods for depositing money, withdrawing money, and checking the account balance. Instantiate an object of this class and demonstrate its functionality.
