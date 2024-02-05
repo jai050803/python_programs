@@ -19,4 +19,5 @@ import math
 
 print(round((math.log(2)))) #find the log of a number
 
+print(math.sin(1)) #return the arc sine of a number
 
