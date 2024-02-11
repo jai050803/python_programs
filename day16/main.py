@@ -12,3 +12,7 @@ t = Turtle() #object created with name t  with class Turtle from turtle module
 screen = Screen() #object created with name screen with class Screen from turtle module
 
 print(screen.canvheight)
+
+#to access the methods
+
+screen.exitonclick()
