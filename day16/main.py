@@ -7,6 +7,10 @@ import another_module as mod
 t = Turtle() #object created with name t  with class Turtle from turtle module
 #paranthesis to initialize or construct the object and save it in variable called t
 t.shape("turtle")
+t.color("red","green")
+t.pendown()
+t.forward(100)
+
 #you can also import Turtle class as from turtle import Turtle
 
 screen = Screen() #object created with name screen with class Screen from turtle module
