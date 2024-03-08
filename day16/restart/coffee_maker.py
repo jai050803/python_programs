@@ -1,5 +1,5 @@
 class CoffeeMaker:
-    def __init__(self, resources):
+    def __init__(self):
         self.resources = {
             "water": 300,
             "milk": 200,
@@ -7,7 +7,7 @@ class CoffeeMaker:
         }
     
     def report(self):
-        print(f"Money : {self.resources['money']} rupees")
-        print(f"Water : {self.resources['water']} ml")
-        print(f"Milk : {self.resources['milk']} ml")
+        print(f"water : {self.resources['water']} rupees")
+        print(f"milk : {self.resources['milk']} ml")
+        print(f"Coffee : {self.resources['coffee']} mg")
         
