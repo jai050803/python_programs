@@ -1,4 +1,4 @@
-class MoneyMaker:
+class MoneyMachine:
     def __init(self,profit):
         self.profit = 0
     
