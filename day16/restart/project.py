@@ -13,16 +13,16 @@ if user_input.lower() == "report":
     coffee_maker.report()
 
 elif user_input.lower() == "latte":
-    drink = MenuItem(user_input, 200, 150, 24, 2.5)
+    drink = MenuItem(user_input, 200, 150, 24, 40)
     if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink.cost):
         coffee_maker.make_coffee(drink)
 
 elif user_input.lower() == "espresso":
-    drink = MenuItem(user_input, 50, 0, 18, 1.5)
+    drink = MenuItem(user_input, 50, 0, 18, 60)
     if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink.cost):
         coffee_maker.make_coffee(drink)
 
 elif user_input.lower() == "cappuccino":
-    drink = MenuItem(user_input, 250, 50, 24, 3)
+    drink = MenuItem(user_input, 250, 50, 24, 50)
     if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink.cost):
         coffee_maker.make_coffee(drink)

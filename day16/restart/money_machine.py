@@ -9,13 +9,14 @@ class MoneyMachine:
     def process_coins(self):
         print("please insert coins")
         for _ in ["5s", "10s", "20s"]:
-            self.money_received += int(input(f"how many {_}?: "))
+            money = int(input(f"how many money in terms of {_} :"))
+            self.money_received += money
         return self.money_received
     
     def make_payment(self, cost):
         self.process_coins()
         if self.money_received >= cost:
-            change = round(self.money_received - cost, 2)
+            change = self.money_received - cost
             print(f"here is rupees {change} in change")
             self.profit += cost
             self.money_received = 0
