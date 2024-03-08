@@ -11,3 +11,7 @@ class CoffeeMaker:
         print(f"milk : {self.resources['milk']} ml")
         print(f"Coffee : {self.resources['coffee']} mg")
         
+    def is_resource_sufficient(self, drink):
+        if self.resources["water"] >= drink["water"] and self.resources["milk"] >= drink["milk"] and self.resources["coffee"] >= drink:
+            return True
+        
