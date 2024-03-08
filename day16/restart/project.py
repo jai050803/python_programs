@@ -1,5 +1,4 @@
-from menu import MENU, resources, profit
-from resources import *
+# day16\restart\project.py
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
