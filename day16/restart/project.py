@@ -6,5 +6,8 @@ from money_machine import MoneyMachine
 money_machine = MoneyMachine()
 coffee_maker = CoffeeMaker()
 
-money_machine.report()
-coffee_maker.report()
+user_input = input("What would you like? (espresso/latte/cappuccino/) :")
+
+if user_input.lower() == "report":
+    money_machine.report()
+    coffee_maker.report()
