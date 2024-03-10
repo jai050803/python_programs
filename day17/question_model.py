@@ -3,4 +3,5 @@ class Quiz_game:
         self.text = data["text"]
         self.answer = data["answer"]
 
+    
         
