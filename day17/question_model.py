@@ -1,7 +1,4 @@
-class Quiz_game:
-    def __init__(self, data):       
-        self.text = data["text"]
-        self.answer = data["answer"]
-
-    
-        
+class Question:
+    def __init__(self,text,answer):
+        self.text = text
+        self.answer = answer
